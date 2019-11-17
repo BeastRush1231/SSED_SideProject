@@ -7,21 +7,28 @@
   <title>Chester's MorseCode</title>
   <link rel="stylesheet" href="MORSECODE.css">
   <link rel="stylesheet" href="MORSECODE.js">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="panels">
-    <div class="panel">
-      <h3>MORSE Code Translation</h3>
+  <div class="wrap">
+    <div class="container">
+      <h3>MorseCode Translation</h3>
       <h1>摩斯密碼翻譯器</h1>
-      <textarea id="input" rows="4" placeholder="輸入英文">MORSRCODE</textarea>
-      <div class="symbol">
-        <textarea id="output" rows="4" placeholder="輸入密碼">MORSRCODE</textarea>
+      <div class="txt">
+        <textarea id="input" rows="4" placeholder="輸入英文">MorseCode</textarea>
+        <div class="symbol">⇅</div>
+        <textarea id="output" rows="4" placeholder="輸入密碼">MorseCode</textarea>
         <div class="buttons">
-          <div class="button" input="btnMorse">翻譯成密碼</div>
-          <div class="button" input="btnEng">翻譯回來</div>
-          <div class="button" input="btnPlay">播放</div>
+          <button class="btn" input="btnMorse">翻譯密碼</button>
+          <button class="btn" input="btnEng">翻譯解密</button>
+          <button class="btn" input="btnPlay">MorseCode</button>
         </div>
       </div>
+    </div>
+    <div class="container right">
+      <h3>翻譯清單</h3>
+      <hr>
+      <ul class="translist"></ul>
     </div>
   </div>
 </body>
