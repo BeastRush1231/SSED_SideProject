@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  border: 1px solid #000;
   font-family: 'Noto Sans TC', sans-serif;
 }
 
@@ -26,10 +27,13 @@ body{
   background-color: #fff;
   color: #1b2a49;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, .2);
-  border-radius: 5px;
+}
+.container.left{
+  border-radius: 5px 0 0 5px;
 }
 .container.right{
   background-color: #c9d1d3;
+  border-radius: 0 5px 5px 0;
 }
 .container h1,.container h3,.symbol{
   text-align: center;
@@ -57,4 +61,26 @@ body{
 .buttons{
   display: flex;
   justify-content: center;
+  margin-top: 30px;
+}
+.btn{
+  padding: 10px 20px;
+  margin: 6px;
+  font-size: 16px;
+  color: #000;
+  letter-spacing: 3px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+}
+.btn.code{
+  background-color: #465881;
+  color: #fff;
+}
+.btn.morse{
+  background-color: #1b2a49;
+  color: #fff;
+}
+.btn.play{
+  border: 2px solid #465881;
 }
