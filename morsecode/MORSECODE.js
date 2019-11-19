@@ -5,6 +5,5 @@ let MorsecodeList = MorsecodeArray.split("|");
 var translateUL = document.querySelector(".translist");
 
 for(let i=0; i < MorsecodeList.length; i++) {
-  translateUL.innerHTML(`<li>${MorsecodeList[i][0]}</li>`);
   MorsecodeList[i] = MorsecodeList[i].split(";");
 }
